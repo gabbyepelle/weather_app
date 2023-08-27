@@ -124,7 +124,7 @@ async function getCurrentWeather(city, units){
     const error = document.querySelector(".error-display");
     clearPage(error);
     try{
-       const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3&aqi=no&alerts=no`);
+       const response = await fetch(`https://cors-anywhere.herokuapp.com/https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}&days=3&aqi=no&alerts=no`);
         const data = await response.json();
         currentCity = data.location.name;
         console.log(currentCity);
