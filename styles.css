@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("./images/pexels-no-name-66997.jpg");
+    color: white;
+    background-size: cover;
+}
+
+main{
+    margin: 30px;
+    position: relative;
+    min-height: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.temp{
+    font-size: 8rem;
+}
+
+h1, p{
+    margin: 0;
+}
+
+ h1{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.header-container{
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;  
+}
+
+.container p{
+    display: inline;
+}
+
+.details p{
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.details{
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+   justify-content: space-between;
+}
+
+.forecast{
+    display: flex;
+    gap: 25px; 
+    max-width: 2000px;
+    overflow:scroll;
+    margin-top: 40px;
+    margin: 0 auto;
+}
+
+.hourly{
+    box-sizing: border-box;
+    flex: 0 0 200px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.hourly p{
+    margin: 0;
+    padding: 0;
+}
+
+.bottom{
+    display: flex;
+    gap: 25px;
+    width: 600px;
+    position: absolute;
+    bottom: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+button{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 7px;
+    background-color: #006666;
+}
+
+
+
+#farenheit:hover, #celsius:hover{
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.error-display{
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
+
+.error-display p{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+   
+
+    .header-container{
+        width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    margin: 20px auto; 
+    text-align: center;
+  }
+
+  .forecast{
+    display: flex;
+    margin: 50px auto;
+    width: 600px;
+  }
+
+  .bottom{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  }
